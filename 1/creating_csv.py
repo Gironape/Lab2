@@ -4,8 +4,8 @@ import pandas as pd
 
 def write_to_file(file: str, X_csv: str, Y_csv: str) -> None:
     """Запуск файла с набором данных
-    file_for_x файл для  первого стобца
-    file_for_y файл для второго столбца
+    X_csv файл для дат
+    Y_csv файл для курса
     """
     df = pd.read_csv(file)
     df["Date"].to_csv(X_csv, index=False)
